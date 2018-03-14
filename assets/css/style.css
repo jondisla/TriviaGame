@@ -1,0 +1,35 @@
+body{
+    background:url(../images/seinfeldbg.jpg)
+}
+
+.card{
+    background:grey;
+    opacity: .8;
+}
+
+.questionblock{
+    margin-top: 70px;
+}
+
+h2{
+    color: yellow;
+}
+
+radio{
+    font-size: 40px;
+}
+
+li{
+    margin-left: 0;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 70px;
+    color: rgb(207, 6, 6);
+    font-weight: bold;
+  }
+
+  input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+  }
