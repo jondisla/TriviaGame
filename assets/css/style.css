@@ -2,9 +2,16 @@ body{
     background:url(../images/seinfeldbg.jpg)
 }
 
+
 .card{
-    background:grey;
-    opacity: .8;
+    background:rgb(255, 255, 255);
+    opacity: .9;
+}
+
+#logo{
+    width: 200px;
+    position: absolute;
+    margin-left: 250px;
 }
 
 .questionblock{
@@ -12,7 +19,8 @@ body{
 }
 
 h2{
-    color: yellow;
+    color: rgb(219, 223, 0);
+    opacity: 1;
 }
 
 radio{
@@ -24,7 +32,7 @@ li{
     display: inline-block;
     font-size: 20px;
     padding-right: 70px;
-    color: rgb(207, 6, 6);
+    color: rgb(221, 2, 2);
     font-weight: bold;
   }
 
