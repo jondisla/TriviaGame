@@ -16,9 +16,16 @@ $( document ).ready(function() {
 
     var score = 0;
 
-    var rammessage = ['Hello.....Newman', 'No soup for you!', 'Giddyup!',"Look, you don't understand. There was shrinkage!", 'Hello......Jerry', 'Is you talking to me?' ]
+    var rammessage = ['"Hello.....Newman"', '"No soup for you!"', '"Giddyup!"','"Look, you don\'t understand. There was shrinkage!"', '"Hello......Jerry"', '"Is you talking to me?"' ]
   
     
+    // function before(){
+    //     $('body').html($('#startBtn').click(function(){
+    //         alert('helo')
+    //     }))
+        
+    // }
+
     function firstSet(){
       
       $('#b1').append('1. ' + questions[0]);
@@ -100,7 +107,7 @@ $( document ).ready(function() {
     //     })
     // }
   
-
+    // before()
     firstSet()
     answers1()
     checkall()
