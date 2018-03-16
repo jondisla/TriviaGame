@@ -13,10 +13,10 @@ $( document ).ready(function() {
     var ans5 = ['Kramer\’s pet rooster', 'Kramer’s pet chicken', 'a picture of jerry as a little kid']
 
     var ans6 = ['Coffee', 'socks', 'juice']
-    
-    var question1 = $('body').value;
-    var ram;
-    var arrayOfFuncs = [];
+
+    var score = 0;
+
+    var rammessage = ['Hello.....Newman', 'No soup for you!', 'Giddyup!',"Look, you don't understand. There was shrinkage!", 'Hello......Jerry', 'Is you talking to me?' ]
   
     
     function firstSet(){
@@ -30,49 +30,79 @@ $( document ).ready(function() {
     }
     
     function answers1(){
-      $('#fchoice1').append('<input type = "radio" name="f1"/>').append(ans1[0])
-      $('#fchoice2').append('<input type = "radio" name="f1" value="serenity"/>').append(ans1[1]);
-      $('#fchoice3').append('<input type = "radio" name="f1"/>').append(ans1[2]);
-      
+      $('#fchoice1').append('<input type = "radio" name="f1" />').append(ans1[0])
+      $('#fchoice2').append('<input type = "radio" name="f1" id="right1"/>').append(ans1[1]);
+      $('#fchoice3').append('<input type = "radio" name="f1" />').append(ans1[2]);
+
       $('#schoice1').append('<input type = "radio" name="s1"/>').append(ans2[0])
       $('#schoice2').append('<input type = "radio" name="s1"/>').append(ans2[1]);
-      $('#schoice3').append('<input type = "radio" name="s1"/>').append(ans2[2]);
+      $('#schoice3').append('<input type = "radio" name="s1" id="right2"/>').append(ans2[2]);
 
-      $('#tchoice1').append('<input type = "radio" name="t1"/>').append(ans3[0])
+      $('#tchoice1').append('<input type = "radio" name="t1" id="right3"/>').append(ans3[0])
       $('#tchoice2').append('<input type = "radio" name="t1"/>').append(ans3[1]);
       $('#tchoice3').append('<input type = "radio" name="t1"/>').append(ans3[2]);
 
       $('#fourchoice1').append('<input type = "radio" name="four1"/>').append(ans4[0])
-      $('#fourchoice2').append('<input type = "radio" name="four1"/>').append(ans4[1]);
+      $('#fourchoice2').append('<input type = "radio" name="four1" id="right4"/>').append(ans4[1]);
       $('#fourchoice3').append('<input type = "radio" name="four1"/>').append(ans4[2]);
       
-      $('#fivechoice1').append('<input type = "radio" name="five1"/>').append(ans5[0])
+      $('#fivechoice1').append('<input type = "radio" name="five1" id="right5"/>').append(ans5[0])
       $('#fivechoice2').append('<input type = "radio" name="five1"/>').append(ans5[1]);
       $('#fivechoice3').append('<input type = "radio" name="five1"/>').append(ans5[2]);
 
       $('#sixchoice1').append('<input type = "radio" name="six1"/>').append(ans6[0])
-      $('#sixchoice2').append('<input type = "radio" name="six1"/>').append(ans6[1]);
+      $('#sixchoice2').append('<input type = "radio" name="six1" id="right6"/>').append(ans6[1]);
       $('#sixchoice3').append('<input type = "radio" name="six1"/>').append(ans6[2]);
-    }
+    
+    
+}
+    
   
+
     function checkall(){
+    $('.btn').one("click", function(){
+    if (document.getElementById('right1').checked){
+        score++;
+        console.log(score)
+    }if (document.getElementById('right2').checked){
+        score++;
+        console.log(score)
+    }if (document.getElementById('right3').checked){
+        score++;
+        console.log(score)
+    }if (document.getElementById('right4').checked){
+        score++;
+        console.log(score)
+    }if (document.getElementById('right5').checked){
+        score++;
+        console.log(score)
+    }if (document.getElementById('right6').checked){
+        score++;
+        console.log(score)
+        }
+    
+    $('body').html('<div class="container" id="score"><div class = "card"><div class="card-body">' + '<center><h1>Your score is </h1>' + '<div id="scorestyle">' + score + '</div>' + '</div><div></div>')
+    
+    showmessage = Math.floor(Math.random()*rammessage.length)
 
-      results = 
+    
+    $('body').append('<div class="container" id="score"><div id="scoreif"><h3>' + rammessage[showmessage] +'</h3></div>')
 
-      $('.btn').click(function(){
-        if($('input:radio[value="r"')){
-            alert(question + ': True');
-        }else
-            alert(question + ': False!');
-
-        $('.container').html('<center><p>'+results+'</p>');
-        })
+    // $('body').append('<center><div id="reload"> <h4>RELOAD TO PLAY AGAIN')
+    
+    })
+    
     }
 
-    console.log(questions)
+    // function playAgain(){
+    //     $('#reload').click(function(){
+    //         console.log('hello');
+    //     })
+    // }
+  
+
     firstSet()
     answers1()
     checkall()
-  
+    // playAgain()
 });
-  

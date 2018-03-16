@@ -15,8 +15,6 @@ body{
 
 #logo{
     width: 200px;
-    position: absolute;
-    margin-left: 250px;
 }
 
 .questionblock{
@@ -57,3 +55,83 @@ li{
       margin-top: 40px;
       font-size: 40px;
   }
+
+  #score{
+      margin-top: 100px;
+      width: 800px;
+
+  }
+
+  #score h1{
+    display: inline-block;
+    padding-right: 40px;
+  }
+
+  #scorestyle{
+      font-size: 80px;
+      text-align: center;
+  }
+
+  #scoreif{
+      color: white;
+  }
+
+  h3{
+      font-size: 70px;
+      text-align: center;
+  }
+/**********RELOAD*************/
+  /* h4{
+    color: rgb(228, 228, 228);
+    margin-top: 150px;
+    font-size: 40px;
+    text-align: center;
+} */
+
+  /**********************************************/
+  @media screen and (max-width: 580px) {
+    .card {
+        margin-top: 50px;
+    }
+
+    #logo{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 140%;
+        
+    }
+    .questionblock{
+        margin-top: 10px;
+    }
+    h2{
+        font-size: 100%;
+    }
+
+    li{
+        font-size: 80%;
+    }
+
+    #score{
+        margin-top: 100px;
+        width: 300px;
+  
+    }
+
+    #score h1{
+        font-size: 50px;;
+      }
+
+      h3{
+        margin-top: -50px;
+        font-size: 200%;
+        text-align: center;
+    }
+    /* h4{
+        color: rgb(180, 180, 180);
+        margin-top: 80px;
+        font-size: 100%;
+        text-align: center;
+    } */
+}
