@@ -16,7 +16,7 @@ $( document ).ready(function() {
 
     var score = 0;
 
-    var rammessage = ['"Hello.....Newman"', '"No soup for you!"', '"Giddyup!"','"Look, you don\'t understand. There was shrinkage!"', '"Hello......Jerry"', '"Is you talking to me?"' ]
+    var rammessage = ['"Why do they make the condom packets so hard to open?  Probably to give the woman a chance to change her mind"','"She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?"','"Jerry, just remember, it\'s not a lie if you believe it"','"Looking at cleavage is like looking at the sun. You don\'t stare at it. It\'s too risky. Ya get a sense of it and then you look away"','“Elaine, breaking up is like knocking over a Coke machine. You can’t do it in one push; you gotta rock it back and forth a few times and then it goes over”','"Hello.....Newman"', '"No soup for you!"', '"Giddyup!"','"Look, you don\'t understand. There was shrinkage!"', '"Hello......Jerry"', '"Is you talking to me?"' ]
   
     
     // function before(){
